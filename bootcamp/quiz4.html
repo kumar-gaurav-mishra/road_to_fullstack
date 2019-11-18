@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <br />
+    <form action="https://www.google.com" method="GET">
+      <label for="first-name">First Name: </label>
+      <input name="first-name" type="text" id="first-name" placeholder="kumar" required />
+      <label for="last-name">Last Name: </label>
+      <input name="last-name" type="text" id="last-name" placeholder="mishra" required /><br />
+      <label for="male">Male </label>
+      <input type="radio" name="gender" id="male" value="male" checked />
+      <label for="female">Female </label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="others">Others </label>
+      <input type="radio" name="gender" id="others" value="others" /><br />
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" placeholder="your email" required />
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password" minlength="5" maxlength="10" required /><br />
+      <label for="birthday">Birthday: </label>
+      <select name="month" id="month">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+      </select>
+      <select name="date" id="date">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <select name="year" id="year">
+        <option value="1990">1990</option>
+        <option value="1991">1991</option> </select
+      ><br />
+      <label for="terms">I agree to the terms and conditions </label>
+      <input type="checkbox" name="terms" id="terms" value="true" /><br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
