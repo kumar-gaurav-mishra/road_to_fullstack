@@ -1,0 +1,30 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1 {
+  font-weight: 700;
+}
+.container {
+  margin: 5px auto;
+  width: 80%;
+  border: 20px solid #bdc3c7;
+  border-radius: 5px;
+  padding: 5px;
+}
+.post {
+  padding: 20px;
+}
+.date {
+  color: #3498db;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.highlight {
+  border-left: 4px solid #bdc3c7;
+  text-align: justify;
+  padding-left:4px;
+}
+
+hr{
+    color: #bdc3c7;
+}
