@@ -12,8 +12,6 @@ h1 {
 .navbar-default .navbar-brand {
   color: white;
 }
-img {
-  padding: 15px 0px 15px 0px;
-  margin: 0px 0px 0px 0px;
-  border: 1px solid #ecf0f1;
+.img-thumbnail {
+  margin-top: 20px;
 }
