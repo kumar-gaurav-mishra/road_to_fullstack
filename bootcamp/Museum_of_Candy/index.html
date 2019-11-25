@@ -42,7 +42,84 @@
         </ul>
       </div>
     </nav>
-
+    <section class="container-fluid px-0">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="text-white text-center d-none d-lg-block mt-5">
+            <h1 id="headingGroup" class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 id="headingGroup" class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 id="headingGroup" class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 id="headingGroup" class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 id="headingGroup" class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 id="headingGroup" class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 id="headingGroup" class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid" src="./imgs/hand2.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid px-0">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-2 order-md-1">
+          <img class="img-fluid" src="./imgs/milk.png" alt="" />
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 candyId">
+              <h2 class="">MUSEUM OF CANDY</h2>
+              <img class="d-none d-lg-inline" src="./imgs/lolli_icon.png" alt="" />
+              <p class="lead">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In perferendis facere est dolorem. Rem aut cumque iure delectus deserunt sunt
+                assumenda inventore necessitatibus reiciendis debitis culpa similique nostrum, numquam voluptatibus ab tempora voluptatum. Autem accusantium
+                excepturi expedita, doloribus culpa laborum consequuntur quia impedit accusamus odio distinctio necessitatibus labore quae quo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid px-0">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-1 order-md-2">
+          <img class="img-fluid" src="./imgs/gumball.png" alt="" />
+        </div>
+        <div class="col-md-6 text-center order-2 order-md-1">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 candyId">
+              <h2 class="">MUSEUM OF CANDY</h2>
+              <img class="d-none d-lg-inline" src="./imgs/lolli_icon.png" alt="" />
+              <p class="lead">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In perferendis facere est dolorem. Rem aut cumque iure delectus deserunt sunt
+                assumenda inventore necessitatibus reiciendis debitis culpa similique nostrum, numquam voluptatibus ab tempora voluptatum. Autem accusantium
+                excepturi expedita, doloribus culpa laborum consequuntur quia impedit accusamus odio distinctio necessitatibus labore quae quo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid px-0">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-2 order-md-1">
+          <img class="img-fluid" src="./imgs/sprinkles.png" alt="" />
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 candyId">
+              <h2 class="">MUSEUM OF CANDY</h2>
+              <img class="d-none d-lg-inline" src="./imgs/lolli_icon.png" alt="" />
+              <p class="lead">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In perferendis facere est dolorem. Rem aut cumque iure delectus deserunt sunt
+                assumenda inventore necessitatibus reiciendis debitis culpa similique nostrum, numquam voluptatibus ab tempora voluptatum. Autem accusantium
+                excepturi expedita, doloribus culpa laborum consequuntur quia impedit accusamus odio distinctio necessitatibus labore quae quo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -60,5 +137,13 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function() {
+        $(document).scroll(function() {
+          var $nav = $('#mainNavbar');
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>
