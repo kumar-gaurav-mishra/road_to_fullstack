@@ -6,36 +6,31 @@ let message = document.querySelector('#message');
 let reset = document.querySelector('#reset');
 let h1 = document.querySelector('h1');
 let container = document.querySelector('#container');
-let hardButton = document.querySelector('#hard');
-let easyButton = document.querySelector('#easy');
+let modes = document.querySelectorAll('.mode');
 let pickedColor;
 let result;
 inetelize();
-function easy() {
-  reset.classList.remove('selected');
-  h1.style.backgroundColor = 'steelblue';
-  easyButton.classList.add('selected');
-  hardButton.classList.remove('selected');
-  blocks = 3;
-  for (let i = blocks; i < 6; i++) {
-    squares[i].style.display = 'none';
-  }
+for (let i = 0; i < modes.length; i++) {
+  modes[i].addEventListener('click', () => {
+    inetelize(modes[i]);
+  });
 }
-function hard() {
+function modeFun(btn) {
+  blocks = btn && btn.value ? +btn.value : 6;
   reset.classList.remove('selected');
+  modes.forEach(bttn => bttn.classList.remove('selected'));
+  if (btn) btn.classList.add('selected');
   h1.style.backgroundColor = 'steelblue';
-  hardButton.classList.add('selected');
-  easyButton.classList.remove('selected');
-  blocks = 6;
   for (let i = 0; i < blocks; i++) {
     squares[i].style.display = 'block';
   }
+  for (let i = blocks; i < 12; i++)
+    if (squares[i]) {
+      if (squares[i]) squares[i].style.display = 'none';
+    }
 }
-hardButton.addEventListener('click', hard);
-hardButton.addEventListener('click', inetelize);
-easyButton.addEventListener('click', easy);
-easyButton.addEventListener('click', inetelize);
-function inetelize() {
+function inetelize(btn) {
+  modeFun(btn);
   colors = colorPicker();
   pickedColor = colors[getRandom(blocks - 1)];
   result = 'Try Again';
@@ -60,9 +55,8 @@ function inetelize() {
 }
 reset.addEventListener('click', () => {
   blocks = 6;
-  hard();
-  easyButton.classList.remove('selected');
-  hardButton.classList.remove('selected');
+  modeFun(reset);
+  modes.forEach(bttn => bttn.classList.remove('selected'));
   reset.classList.add('selected');
   if (reset.textContent == 'Play Again?') {
     reset.textContent = 'New Colors';
