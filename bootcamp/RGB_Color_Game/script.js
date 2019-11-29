@@ -12,6 +12,8 @@ let pickedColor;
 let result;
 inetelize();
 function easy() {
+  reset.classList.remove('selected');
+  h1.style.backgroundColor = 'steelblue';
   easyButton.classList.add('selected');
   hardButton.classList.remove('selected');
   blocks = 3;
@@ -20,6 +22,8 @@ function easy() {
   }
 }
 function hard() {
+  reset.classList.remove('selected');
+  h1.style.backgroundColor = 'steelblue';
   hardButton.classList.add('selected');
   easyButton.classList.remove('selected');
   blocks = 6;
@@ -44,6 +48,7 @@ function inetelize() {
         squares.forEach(square => (square.style.backgroundColor = pickedColor));
         result = 'correct';
         reset.textContent = 'Play Again?';
+        reset.classList.remove('selected');
         h1.style.backgroundColor = pickedColor;
       } else {
         result = 'Try Again';
@@ -58,10 +63,12 @@ reset.addEventListener('click', () => {
   hard();
   easyButton.classList.remove('selected');
   hardButton.classList.remove('selected');
+  reset.classList.add('selected');
   if (reset.textContent == 'Play Again?') {
     reset.textContent = 'New Colors';
   } else if (result == 'correct') {
     reset.textContent = 'Play Again?';
+    reset.classList.remove('selected');
   }
   colors = colorPicker();
   inetelize();
