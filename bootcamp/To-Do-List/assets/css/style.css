@@ -1,0 +1,8 @@
+.container {
+  margin: 10% auto;
+  background: lightblue;
+  width: 30%;
+}
+h1 {
+  float: right;
+}
