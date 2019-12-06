@@ -4,6 +4,7 @@
   "description": "Yelp Camp Demo application",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kumar Gaurav Mishra",

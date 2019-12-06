@@ -1,1 +1,21 @@
-<h1>Camp Grounds Works</h1>
+<%- include("partials/header") %>
+<header class="jumbotron">
+  <div class="container">
+    <h1>Welcomp To YelpCamp!</h1>
+    <p>View our hand-picked camp camp grounds from all over the world</p>
+    <p>
+      <a class="btn btn-primary btn-lg" href="/campgrounds/new">New Campgrounds</a>
+    </p>
+  </div>
+</header>
+<div class="row" style="display: flex; flex-wrap: wrap;">
+  <% campGrounds.forEach(function(camp){ %>
+  <div class="col-md-3 col-sm-6">
+    <div>
+      <img class="img-thumbnail" src=<%= camp.image %>>
+      <p class="caption text-center"><%= camp.name %></p>
+    </div>
+  </div>
+  <% }) %>
+</div>
+<%- include("partials/footer") %>
