@@ -3,5 +3,4 @@ const commentsSchema = new mongoose.Schema({
   text: String,
   author: String
 });
-const Comments = mongoose.model('comments', commentsSchema);
-module.exports = Comments;
+module.exports = mongoose.model('comments', commentsSchema);
