@@ -12,7 +12,9 @@
   <% campGrounds.forEach(function(camp){ %>
   <div class="col-md-3 col-sm-6">
     <div>
+      <a href=<%="/campgrounds/"+ camp._id %>>
       <img class="img-thumbnail" src=<%= camp.image %>>
+      </a>
       <p class="caption text-center"><%= camp.name %></p>
     </div>
   </div>

@@ -1,0 +1,13 @@
+<%- include("partials/header") %>
+<header class="jumbotron">
+  <div class="container">
+    <h1><%= camp.name %></h1>
+  </div>
+</header>
+<div class="row" style="display: flex; flex-wrap: wrap; flex-direction: center;">
+  <div class="col-12 mx-auto my-auto">
+    <img class="img-thumbnail" src=<%= camp.image %>>
+    <p class="caption text-center"><%= camp.description %></p>
+  </div>
+</div>
+<%- include("partials/footer") %>
