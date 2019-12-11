@@ -8,7 +8,7 @@ const Comments = require('./models/comments');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.set('view engine', 'ejs');
-
+app.use(express.static(__dirname + '/public'));
 app.get('/', async (req, res) => {
   res.render('landing.ejs');
 });
