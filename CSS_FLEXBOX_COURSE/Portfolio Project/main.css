@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+:root {
+  --light: #fff;
+  --dark: #181b24;
+  --gray: #899495;
+  --orange: #fc5130;
+  --sectionGray: #f2f2f2;
+}
+/* nav start */
+.nav{
+    background: var(--light);
+}
+/* nav end */
+/* header start */
+.header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(255,255,255, 0.3), rgba(255, 255, 255, 0.3)),url(./img/header-bcg.jpeg)center/cover fixed no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+/* header end */
+/* banner start */
+.banner{
+    /* as a flex child */
+    flex: 1 0 auto;
+    /* as a parent */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--dark);
+    text-align: center;
+    padding-bottom: 4rem;
+    font-weight: 700;
+}
+.banner__title{
+    font-size: 4rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.banner__jobs{
+    letter-spacing: 0.15rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: var(--light);
+}
+/* banner end */
+
+
+
+

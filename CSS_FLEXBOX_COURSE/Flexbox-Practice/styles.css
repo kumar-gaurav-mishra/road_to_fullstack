@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #f3f3f3;
@@ -5,6 +9,8 @@ body {
 
 .container {
     border: 5px solid red;
+    height: 300px;
+    height: 40vh;
 }
 
 .box {

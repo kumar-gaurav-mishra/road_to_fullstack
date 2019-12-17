@@ -10,6 +10,7 @@
       .container {
         /* display: inline-flex; */
         display: flex;
+        flex-wrap: wrap;
         /* flex-direction: row; */
         /* flex-direction: column; */
         /* flex-wrap: wrap; */
@@ -20,7 +21,19 @@
         /* justify-content: center; */
         /* justify-content: space-between; */
         /* justify-content: space-evenly; */
-        
+        /* align-items: center;
+        align-items: flex-start;
+        align-items: flex-end;
+        align-items: baseline;
+        align-items: stretch; */
+        /* align-items: center; // Vertically Align items to center.
+        justify-content: center;//Horigentally Align items to center
+        */
+      }
+      .box{
+        flex-grow:1;
+        flex-shrink: 0;
+        flex-basis: 200px;
       }
     </style>
   </head>
@@ -31,13 +44,13 @@
       <div class="box box-3">3</div>
       <div class="box box-4">4</div>
       <div class="box box-5">5</div>
-      <!-- <div class="box generic">G</div>
       <div class="box generic">G</div>
       <div class="box generic">G</div>
       <div class="box generic">G</div>
       <div class="box generic">G</div>
       <div class="box generic">G</div>
-      <div class="box generic">G</div> -->
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
     </div>
   </body>
 </html>
