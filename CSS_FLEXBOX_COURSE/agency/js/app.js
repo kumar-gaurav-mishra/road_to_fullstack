@@ -20,4 +20,15 @@ $(document).ready(function() {
         .pause();
     }
   });
+
+  // magnific popup
+  $('#projects__modal').magnificPopup({
+    delegate: 'a', //child items selector, by clicking it popup will open
+    type: 'image',
+    gallery: {
+      //options for gallery
+      enabled: true
+    }
+    //other options
+  });
 });
