@@ -578,3 +578,277 @@ body {
 }
 
 /* projects section end */
+/* progress section */
+.progress__img {
+  min-height: 50vh;
+  background: url('../img/contact.jpeg')center/cover fixed no-repeat;
+}
+
+.progress__bar {
+  padding: 0 2rem;
+}
+
+.progress__bar-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
+  color: var(--blue);
+}
+
+.progress__item {
+  margin: 2rem 0;
+}
+
+.progress_bcg {
+  width: 100%;
+  height: 0.7rem;
+  background: var(--grey);
+  position: relative;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.progress__value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: var(--yellow);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+  -moz-transition: all 2s linear;
+  -ms-transition: all 2s linear;
+  -o-transition: all 2s linear;
+}
+
+.progress:hover .progress__value-one {
+  width: 100%;
+}
+
+.progress:hover .progress__value-two {
+  width: 90%;
+}
+
+.progress:hover .progress__value-three {
+  width: 80%;
+}
+
+.progress:hover .progress__value-four {
+  width: 70%;
+}
+
+.progress:hover .progress__value-five {
+  width: 60%;
+}
+
+.progress__item {
+  flex: 0 0 50%;
+}
+
+.progress__info {
+  align-self: center;
+}
+
+@media screen and (min-width: 992px) {
+  .progress__img {
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  }
+}
+
+/* progress section end */
+/* about us section */
+.section-title__info-blue {
+  color: var(--blue);
+}
+
+.section-title__text-border-blue {
+  border-color: var(--blue);
+}
+
+.about {
+  background: var(--gray);
+  color: var(--black);
+}
+
+.about__img {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+
+.about__img-container {
+  flex: 0 0 80%;
+  background: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+
+.about__img-name {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-style: italic;
+}
+
+.about__img-photo {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.about__img-text {
+  line-height: 1.5;
+}
+
+.about__info-title {
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.accordion {
+  border: 1px solid var(--black);
+  margin: 1rem 0;
+}
+
+.accordion__header {
+  display: flex;
+  background: var(--white);
+  color: var(--black);
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--black);
+}
+
+.accordion__icon {
+  padding: 0.75rem;
+  background: var(--black);
+  color: var(--yellow);
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+.accordion__content {
+  padding: 1rem 2rem;
+  line-height: 1.5;
+  background: var(--white);
+  display: none;
+}
+
+.accordion__btn {
+  margin-right: 0.5rem;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  border: 0.05rem solid var(--black);
+  padding: 0.08rem 0.32rem;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+
+.accordion__header:hover .accordion__icon {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.accordion__header:hover .accordion__btn {
+  background: var(--yellow);
+}
+
+@media screen and (min-width: 768px) {
+  .about__img {
+    flex: 0 0 calc(40% - 0.5rem);
+  }
+
+  .about__info {
+    flex: 0 0 calc(60% - 0.5rem);
+    align-self: center;
+  }
+}
+
+/* about us section end */
+/* numbers */
+.number {
+  text-align: center;
+  background: var(--black);
+  color: var(--yellow);
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+.number:hover {
+  background: var(--blue);
+  color: var(--cream);
+}
+
+.number__icon {
+  font-size: 4rem;
+}
+
+.number__data {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.number__name {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .numbers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .number {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .number {
+    flex: 0 0 25%;
+  }
+}
+
+/* numbers end */

@@ -32,3 +32,10 @@ $(document).ready(function() {
     //other options
   });
 });
+// accordion
+$('.accordion__btn').click(function () {
+  $('.accordion__btn').not(this).removeClass('rotate');
+  $('.accordion__btn').not(this).parent().next().slideUp();
+  $(this).toggleClass('rotate');
+  $(this).parent().next().slideToggle();
+})
