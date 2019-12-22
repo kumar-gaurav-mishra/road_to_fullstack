@@ -283,7 +283,7 @@ body {
 }
 
 .contact {
-    width: 20vw;
+    width: 30vw;
     padding-top: 5rem;
 }
 
@@ -336,11 +336,18 @@ input[type=submit] {
     color: var(--blue);
 }
 
-/* .submit{
-    width: 100%;
-    padding: 5rem;
-    font-size: 3rem;
-} */
+@media screen and (max-width: 1400px) {
+    .contact {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact {
+        width: 70vw;
+    }
+}
+
 /* contact end */
 
 /* footer */
