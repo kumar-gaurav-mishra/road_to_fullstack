@@ -14,6 +14,7 @@
     --blue: #00a7e1;
     --cream: #eddea4;
     --white: rgb(245, 243, 245);
+    --coffee: #593C1F;
 }
 
 body {
@@ -21,19 +22,20 @@ body {
 }
 
 .section-padding {
-    padding: 3rem 0;
+    padding: 2rem;
 }
 
 .flexbox-parent {
-    max-width: 95vw;
-    margin: 2rem auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 992px) {
     .flexbox-parent__medium {
-        display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        align-items: center;
     }
 }
 
@@ -41,7 +43,8 @@ body {
 /* header */
 .header-nav-bar {
     display: flex;
-    width: 100%;
+    width: 100vw;
+    margin: 0;
     position: fixed;
     padding: 1rem;
     background: var(--cream);
@@ -98,7 +101,7 @@ body {
     color: var(--white);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     .header-nav-bar {
         flex-wrap: wrap;
         flex: 0 0 50%;
@@ -123,4 +126,240 @@ body {
 /* header end */
 
 /* home */
+#home {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    background: var(--blue);
+}
+
+.video {
+    width: 25vw;
+    border: 0.5rem solid var(--yellow);
+    outline: none;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    width: 40vw;
+    padding: 1rem 1rem;
+    border: 0.5rem solid var(--yellow);
+    text-align: center;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content-header {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    color: var(--yellow);
+    letter-spacing: 0.2rem;
+}
+
+.content-info {
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    color: var(--cream);
+}
+
+@media screen and (max-width: 1500px) {
+    .video {
+        flex: 0 0 40vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #home {
+        padding-top: 10rem;
+    }
+
+    .video {
+        flex: 0 0 90vw;
+    }
+
+    .content {
+        flex: 0 0 90vw;
+        margin-top: 2rem;
+    }
+}
+
 /* home end */
+
+/* service */
+.service-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-header {
+    color: var(--blue);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+#services {
+    background: var(--yellow);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.service {
+    width: 30vw;
+    padding: 0.7rem;
+    border: 0.5rem solid var(--blue);
+    border-radius: 0.7rem;
+    text-align: center;
+    background: var(--cream);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+    width: 100%;
+}
+
+.service-header {
+    color: var(--blue);
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.service-info {
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--black);
+}
+
+@media screen and (max-width: 1500px) {
+    .service {
+        flex: 0 0 30vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .service {
+        flex: 0 0 90vw;
+        margin-bottom: 2rem;
+    }
+}
+
+/* service end */
+/* about */
+#about {
+    background: url("https://images-prod.healthline.com/hlcmsresource/images/AN_images/espresso-ground-coffee-beans-1296x728.jpg")center/cover fixed no-repeat;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.about-info {
+    width: 90vw;
+    color: var(--cream);
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* about end */
+
+/* contact */
+#contact {
+    background: url("./contact.jpeg")center/cover fixed no-repeat;
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+}
+
+.contact {
+    width: 20vw;
+    padding-top: 5rem;
+}
+
+.email {
+    width: 100%;
+    height: 3.5rem;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--blue);
+    border: none;
+    outline: none;
+    border-bottom: 0.18rem solid var(--blue);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.email::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--blue);
+    opacity: 1;
+    /* Firefox */
+}
+
+input[type=submit] {
+    background-color: var(--blue);
+    border: none;
+    color: var(--white);
+    width: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0.1rem solid var(--yellow);
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+}
+
+#submit:hover {
+    border-color: var(--blue);
+    background: var(--yellow);
+    color: var(--blue);
+}
+
+/* .submit{
+    width: 100%;
+    padding: 5rem;
+    font-size: 3rem;
+} */
+/* contact end */
+
+/* footer */
+.footer {
+    width: 100vw;
+    height: 10vh;
+    background: var(--blue);
+    padding: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--cream);
+}
+
+.link {
+    text-decoration: none;
+    padding-bottom: 1rem;
+    color: var(--cream);
+    text-transform: capitalize;
+}
+
+/* footer end */
