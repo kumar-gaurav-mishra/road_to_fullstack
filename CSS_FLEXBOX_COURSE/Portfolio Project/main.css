@@ -63,7 +63,6 @@ body {
     cursor: pointer;
 }
 
-/*  */
 .nav__links {
     height: 0;
     overflow: hidden;
@@ -189,7 +188,7 @@ body {
     left: -10px;
 }
 
-.about-info: {
+.about-info {
     margin: 3rem 0;
 }
 

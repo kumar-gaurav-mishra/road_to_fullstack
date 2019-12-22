@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #ffc914;
+    --grey: #b5c2b7;
+    --black: rgb(46, 40, 42);
+    --blue: #00a7e1;
+    --cream: #eddea4;
+    --white: rgb(245, 243, 245);
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.section-padding {
+    padding: 3rem 0;
+}
+
+.flexbox-parent {
+    max-width: 95vw;
+    margin: 2rem auto;
+}
+
+@media screen and (min-width: 768px) {
+    .flexbox-parent__medium {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+/* global end */
+/* header */
+.header-nav-bar {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    padding: 1rem;
+    background: var(--cream);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+#header-img {
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    margin-left: 3rem;
+    border: 0.15rem solid var(--black);
+    border-radius: 150%;
+    -webkit-border-radius: 150%;
+    -moz-border-radius: 150%;
+    -ms-border-radius: 150%;
+    -o-border-radius: 150%;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 3rem;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    background: var(--blue);
+    border: 0.15rem solid var(--black);
+    color: var(--white);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+}
+
+.nav-link:hover {
+    background: var(--black);
+    border-color: var(--blue);
+    color: var(--white);
+}
+
+@media screen and (max-width: 650px) {
+    .header-nav-bar {
+        flex-wrap: wrap;
+        flex: 0 0 50%;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    #header-img {
+        margin-bottom: 2rem;
+        margin-left: 0;
+    }
+
+    .nav-links {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        margin: 0 0.3rem;
+    }
+}
+
+/* header end */
+
+/* home */
+/* home end */
