@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #ffc914;
+  --grey: #b5c2b7;
+  --black: rgb(46, 40, 42);
+  --blue: #00a7e1;
+  --cream: #eddea4;
+  --white: rgb(245, 243, 245);
+  --coffee: #593c1f;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.section-padding {
+  padding: 2rem;
+}
+
+.flexbox-parent {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 992px) {
+  .flexbox-parent__medium {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+/* global end */
+/* sidebar */
+.sidebar {
+  width: 20vw;
+  background: yellow;
+  padding: 10vw;
+}
+/* sidebar end */
+/* content */
+.content {
+  width: 80vw;
+  background: blue;
+  padding: 40vw;
+}
+@media screen and (max-width: 992px) {
+  .sidebar {
+    width: 100vw;
+  }
+  .content {
+    width: 100vw;
+  }
+}
+/* content end */
