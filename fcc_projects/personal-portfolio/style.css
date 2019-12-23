@@ -1,0 +1,129 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #ffc914;
+    --grey: #b5c2b7;
+    --black: rgb(46, 40, 42);
+    --blue: #00a7e1;
+    --darkBlue: #0f5894;
+    --cream: #eddea4;
+    --white: rgb(245, 243, 245);
+    --coffee: #593C1F;
+    --crimson: #b3042c;
+}
+
+body {
+    font-family: 'Roboto', monospace;
+}
+
+.section-padding {
+    padding: 2rem;
+}
+
+.flexbox-parent {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) {
+    .flexbox-parent__medium {
+        align-items: center;
+    }
+}
+
+/* global end */
+
+/* nav */
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: darkred;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    box-shadow: 0px 15px 20px rgb(0, 0, 0, 0.3);
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--cream);
+    text-transform: capitalize;
+    letter-spacing: 0.15rem;
+    font-size: 1.5rem;
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 0.7s linear;
+    padding: 1.1rem 1rem;
+}
+
+.nav-list:hover .nav-link {
+    background: var(--darkBlue);
+}
+
+/* nav end */
+/* welcome section */
+.welcome-section {
+    margin-top: 15.0001px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black);
+    color: white;
+    text-align: center;
+}
+
+.welcome-header {
+    text-transform: capitalize;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    line-height: 4rem;
+}
+
+.welcome-paragraph {
+    color: var(--crimson);
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+}
+
+/* welcome section end */
+/* projects */
+.projects {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-header {
+    text-align: center;
+    border-bottom: 2px solid blue;
+}
+
+.project-tile {
+    width: 30vw;
+    background: yellow;
+    margin: 1rem;
+}
+
+/* projects end */
