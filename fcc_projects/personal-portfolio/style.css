@@ -122,8 +122,17 @@ body {
 
 .project-tile {
     width: 30vw;
-    background: yellow;
+    height: 30vh;
+    background: var(--cream);
     margin: 1rem;
+    padding: 0.5rem;
+}
+
+.tile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* projects end */
