@@ -26,7 +26,7 @@ body {
 }
 
 .flexbox-parent {
-  width: 70vw;
+  width: 85vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -47,7 +47,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  background: darkred;
+  background: var(--crimson);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -114,20 +114,38 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background: var(--darkBlue);
 }
 
 .project-header {
   text-align: center;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid var(--cream);
+  padding: 2rem 1rem 1rem 1rem;
+  font-size: 2rem;
+  color: var(--cream);
+  letter-spacing: 0.20rem;
+  font-weight: 900;
 }
 
 .project-tile {
   width: 20vw;
-  height: 30vh;
-  background: var(--cream);
+  height: 40vh;
+  background: var(--crimson);
   margin: 1rem;
   padding: 0.5rem;
+  padding-bottom: 4rem;
   text-align: center;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 
 .tile-img {
@@ -135,6 +153,63 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.hover-show {
+  color: var(--darkBlue);
+  display: none;
+}
+
+.tile-link {
+  text-decoration: none;
+}
+
+.tile-title {
+  text-decoration: none;
+  color: var(--cream);
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  text-transform: capitalize;
+}
+
+.tile-title:hover .hover-show {
+  display: inline;
+}
+
+.all-projects-link {
+  text-decoration: none;
+  margin-bottom: 2rem;
+  color: var(--cream);
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  background: var(--crimson);
+  border-radius: 0.20rem;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0.20rem;
+  -moz-border-radius: 0.20rem;
+  -ms-border-radius: 0.20rem;
+  -o-border-radius: 0.20rem;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+}
+.all-projects-link:hover{
+  background: var(--black);
+  border-color: var(--crimson);
+  color: var(--cream);
+}
+@media screen and (max-width:1400px) {
+  .project-tile {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .project-tile {
+    width: 90vw;
+  }
 }
 
 /* projects end */
