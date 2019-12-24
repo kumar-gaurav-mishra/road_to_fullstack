@@ -19,6 +19,9 @@
   --crimson: #b3042c;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Roboto', monospace;
 }
@@ -81,6 +84,7 @@ body {
 /* nav end */
 /* welcome section */
 .welcome-section {
+  margin-top: 1rem;
   width: 100%;
   height: 100vh;
   display: flex;
