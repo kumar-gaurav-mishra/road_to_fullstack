@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/road_to_fullstack/React+Course/monster_inc/static/css/main.cdd66344.chunk.css",
+    "main.js": "/road_to_fullstack/React+Course/monster_inc/static/js/main.6065e3c6.chunk.js",
+    "main.js.map": "/road_to_fullstack/React+Course/monster_inc/static/js/main.6065e3c6.chunk.js.map",
+    "runtime-main.js": "/road_to_fullstack/React+Course/monster_inc/static/js/runtime-main.c1e8e638.js",
+    "runtime-main.js.map": "/road_to_fullstack/React+Course/monster_inc/static/js/runtime-main.c1e8e638.js.map",
+    "static/js/2.40c1e28e.chunk.js": "/road_to_fullstack/React+Course/monster_inc/static/js/2.40c1e28e.chunk.js",
+    "static/js/2.40c1e28e.chunk.js.map": "/road_to_fullstack/React+Course/monster_inc/static/js/2.40c1e28e.chunk.js.map",
+    "index.html": "/road_to_fullstack/React+Course/monster_inc/index.html",
+    "precache-manifest.c90ef36cb5d153e66236671b8a8e458c.js": "/road_to_fullstack/React+Course/monster_inc/precache-manifest.c90ef36cb5d153e66236671b8a8e458c.js",
+    "service-worker.js": "/road_to_fullstack/React+Course/monster_inc/service-worker.js",
+    "static/css/main.cdd66344.chunk.css.map": "/road_to_fullstack/React+Course/monster_inc/static/css/main.cdd66344.chunk.css.map",
+    "static/js/2.40c1e28e.chunk.js.LICENSE": "/road_to_fullstack/React+Course/monster_inc/static/js/2.40c1e28e.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1e8e638.js",
+    "static/js/2.40c1e28e.chunk.js",
+    "static/css/main.cdd66344.chunk.css",
+    "static/js/main.6065e3c6.chunk.js"
+  ]
+}
