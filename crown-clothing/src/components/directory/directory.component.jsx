@@ -11,33 +11,38 @@ class Directory extends React.Component {
           title: 'hats',
           imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
           id: 1,
-          linkUrl: 'shop/hats'
+          linkUrl: 'shop/hats',
+          bgColor: '#581f18'
         },
         {
           title: 'jackets',
           imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
           id: 2,
-          linkUrl: 'shop/jackets'
+          linkUrl: 'shop/jackets',
+          bgColor: '#f0a202'
         },
         {
           title: 'sneakers',
           imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
           id: 3,
-          linkUrl: 'shop/sneakers'
+          linkUrl: 'shop/sneakers',
+          bgColor: '#202c59'
         },
         {
           title: 'womens',
           imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
           size: 'large',
           id: 4,
-          linkUrl: 'shop/womens'
+          linkUrl: 'shop/womens',
+          bgColor: '#d95d39'
         },
         {
           title: 'mens',
           imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
           size: 'large',
           id: 5,
-          linkUrl: 'shop/mens'
+          linkUrl: 'shop/mens',
+          bgColor: '#51cb20'
         }
       ]
     };
@@ -45,8 +50,8 @@ class Directory extends React.Component {
   render() {
     return (
       <div className="directory-menu">
-        {this.state.sections.map(({ title, imageUrl, id, size }) => (
-            <MenuItem key={id} title={title} imageUrl={imageUrl} size={size}/>
+        {this.state.sections.map(({ title, imageUrl, id, size, linkUrl, bgColor }) => (
+          <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} linkUrl={linkUrl} bgColor={bgColor} />
         ))}
       </div>
     );

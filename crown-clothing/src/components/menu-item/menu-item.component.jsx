@@ -1,12 +1,14 @@
 import React from 'react';
 import './menu-item.style.scss';
 
-const MenuItem = ({ title, imageUrl, size }) => (
-  <div
-    style={{
-      backgroundImage: `url(${imageUrl})`
-    }}
-    className={`${size} menu-item`}>
+const MenuItem = ({ title, imageUrl, size, linkUrl, bgColor }) => (
+  <div className={`${size} menu-item`}>
+    <div
+      style={{
+        backgroundColor: bgColor,
+        backgroundImage: `url(${imageUrl})`
+      }}
+      className="background-image"></div>
     <div className="content">
       <h1 className="title">{title}</h1>
       <span className="subtitle">SHOP NOW</span>
