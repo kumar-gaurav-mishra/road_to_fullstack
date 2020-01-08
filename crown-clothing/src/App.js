@@ -4,6 +4,7 @@ import './App.css';
 import HomePage from './pages/homepage/homepage.component.jsx';
 import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/header.component';
+import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 class App extends React.Component {
   // constructor() {
   //   super();
@@ -19,6 +20,9 @@ class App extends React.Component {
             </Route>
             <Route exact path="/shop">
               <ShopPage />
+            </Route>
+            <Route exact path="/sign-in">
+              <SignInAndSignUp />
             </Route>
           </Switch>
         </Router>
