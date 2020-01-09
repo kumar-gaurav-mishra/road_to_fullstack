@@ -23,19 +23,21 @@
 
   &:hover {
     cursor: pointer;
+
     & .background-image {
       transform: scale(1.1);
       -webkit-transform: scale(1.1);
       -moz-transform: scale(1.1);
       -ms-transform: scale(1.1);
       -o-transform: scale(1.1);
-      transition: transform 6s cubic-bezier(0.25 0.45 0.45 0.95);
-      -webkit-transition: transform 6s cubic-bezier(0.25 0.45 0.45 0.95);
-      -moz-transition: transform 6s cubic-bezier(0.25 0.45 0.45 0.95);
-      -ms-transition: transform 6s cubic-bezier(0.25 0.45 0.45 0.95);
-      -o-transition: transform 6s cubic-bezier(0.25 0.45 0.45 0.95);
+      transition: all 3s linear;
+      -webkit-transition: all 3s linear;
+      -moz-transition: all 3s linear;
+      -ms-transition: all 3s linear;
+      -o-transition: all 3s linear;
     }
-    & .content{
+
+    & .content {
       opacity: 0.9;
     }
   }
@@ -49,7 +51,8 @@
 }
 
 .content {
-  height: 90px;
+  height: 15vh;
+  width: 7vw;
   padding: 0 25px;
   display: flex;
   flex-direction: column;
@@ -72,4 +75,5 @@
 .subtitle {
   font-weight: lighter;
   font-size: 16px;
+  padding-bottom: 20px;
 }
