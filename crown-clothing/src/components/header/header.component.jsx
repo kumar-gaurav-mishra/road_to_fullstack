@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import './header.style.scss';
 import firebase from 'firebase/app';
+import CartIcon from '../cart-icon/cart-icon.component';
+import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
 const Header = ({ currentUser }) => (
   <div className="header">
@@ -26,7 +28,11 @@ const Header = ({ currentUser }) => (
           SIGN IN
         </Link>
       )}
+      <Link className="option" to="/cart">
+        <CartIcon/>
+      </Link>
     </div>
+    <CartDropdown/>
   </div>
 );
 const mapStateToProps = state => ({
