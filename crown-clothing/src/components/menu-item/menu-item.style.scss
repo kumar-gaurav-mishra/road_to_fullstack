@@ -62,6 +62,7 @@
   background-color: white;
   opacity: 0.7;
   position: absolute;
+  word-wrap: break-word;
 }
 
 .title {
@@ -70,10 +71,12 @@
   font-size: 22px;
   color: #4a4a4a;
   text-transform: uppercase;
+  word-wrap: break-word;
 }
 
 .subtitle {
   font-weight: lighter;
   font-size: 16px;
   padding-bottom: 20px;
+  word-wrap: break-word;
 }
