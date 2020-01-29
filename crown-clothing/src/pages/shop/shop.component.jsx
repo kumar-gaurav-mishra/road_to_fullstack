@@ -1,8 +1,14 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
-const ShopPage = () => (
-  <div className="shop-page">
-    <CollectionsOverview />
-  </div>
-);
+import CategoryPage from '../category/category.component';
+const ShopPage = ({ match }) => {
+  console.log('shop page:',match);
+  return(
+    <div className="shop-page">
+      <Route exact path={`${match.path}`} component={CollectionsOverview} />
+      <Route exact path={`${match.path}/:categoryId`} component={CategoryPage} />
+    </div>
+  )
+};
 export default ShopPage;
